@@ -1,0 +1,126 @@
+.page-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+}
+
+
+.sidebar-menu {
+    padding: 16px 0;
+    width: 100%;
+  }
+
+  .sidebar-menu li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 24px 8px 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .sidebar-menu li a span {
+    margin-left: 15px;
+  }
+
+  .sidebar-menu li:hover , .sidebar-menu li.active {
+    background-color: #f2f4f683;
+  }
+
+  .page-wrapper.toggled .sidebar {
+      width: fit-content !important;
+      background: white;
+    height: 100%;
+
+  }
+  .page-wrapper .sidebar {
+    width: 300px !important;
+    height: 100%;
+    background: white;
+
+}
+.page-wrapper.toggled .main {
+    width: 100%;
+    padding: 0 0.5rem;
+}
+.main {
+    width: calc(100% - 300px);
+    padding: 0 0.5rem;
+}
+.page-wrapper.toggled .hideContent {
+    transition: width 2s;
+    display: none !important;
+}
+
+.page-wrapper.toggled .sidebar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1024px) {
+    .sidebar-menu li a {
+      padding: 8px 24px 8px 24px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .sidebar-menu li a {
+      padding: 8px 24px 8px 12px;
+    }
+
+    .main {
+      padding: 0 0.1rem;
+  }
+  }
+  
+  .sidebar-menu li a:hover > i::before {
+    display: inline-block;
+  }
+  
+  .sidebar-menu li a:focus {
+    outline: none;
+  }
+  
+  .sidebar-menu li a i {
+    width: 36px;
+    height: 36px;
+    background-color: #145da7 !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-menu li:hover i, .sidebar-menu li.active i {
+    background-color: #f2f4f6;
+  }
+  
+
+
+
+
+ 
+
+  .main.unToggled .hideContent2{
+    display: none !important;
+  }
+
+
+  .main-wrapper {
+    padding-bottom: 35px;
+    }
+
+
+  /* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+ 
