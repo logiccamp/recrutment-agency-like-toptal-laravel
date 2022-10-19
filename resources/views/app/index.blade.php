@@ -214,7 +214,7 @@
 
 
     <!-- Candidates Start -->
-    <div class="container mt-100 mt-60">
+    <div class="container mt-100 mt-60 d-none">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
